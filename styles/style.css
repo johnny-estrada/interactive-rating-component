@@ -1,3 +1,14 @@
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/**************************/
+/* GLOBAL */
+/**************************/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -9,35 +20,6 @@ body {
 	font-size: 16px;	
 }
 
-h2 {
-	/* margin-top: 10px; */
-	font-size: 24px;
-	font-style: normal;
-	color: #fff;
-	font-weight: 700;
-	line-height: 1.8;
-	
-	
-}
-
-p {
-	margin-top: 10px;
-	color: hsl(217, 12%, 63%);
-	font-weight: 400;
-	line-height: 1.7;
-	font-size: 14px;
-	margin-bottom: 24px;
-}
-
-form {
-	margin: 24px;
-}
-
-label {
-	font-size: 24px;
-	color: white;
-}
-
 .container {
 	background: hsl(216, 12%, 8%);
 	height: 100vh;
@@ -47,36 +29,46 @@ label {
 	justify-content: center;
 }
 
-.rating {
-	display: none;
-	background: radial-gradient(at top,
-	hsl(215, 20%, 17%), 
-	hsl(215, 24%, 12%)); 
-	border-radius: 5%;
-	/* padding: 24px 0 0 24px; */
-	width: 327px;
-	height: 360px;
-}	
-
-.thank-you {
-	background: radial-gradient(at top,
-	hsl(215, 20%, 17%), 
-	hsl(215, 24%, 12%)); 
-	border-radius: 5%;
-	padding: 15px;
-	/* padding: 24px 0 0 24px; */
-	width: 327px;
-	height: 360px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}	
-
-.thank-you p {
-	text-align: center;
+.rating-content {
+	margin: 24px;
 }
+
+/**************************/
+/* RATINGS */
+/**************************/
+.img {
+	background: hsl(213, 19%, 18%);
+	padding: 13px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.rating-secondary {
+	font-size: 24px;
+	font-style: normal;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.8;	
+}
+
+.main-text {
+	margin: 10px 0 20px 0;
+	color: hsl(217, 12%, 63%);
+	font-weight: 400;
+	line-height: 1.7;
+	font-size: 14px;
+}
+
+.rating {
+	/* display: none; */
+	background: radial-gradient(at top,
+	hsl(215, 20%, 17%), 
+	hsl(215, 24%, 12%)); 
+	border-radius: 5%;
+	width: 327px;
+	height: 360px;
+}	
 
 .btn-primary {
 	background: hsl(25, 97%, 53%);
@@ -84,15 +76,14 @@ label {
 	font-weight: 700;
 	line-height: 1.8;
 	font-style: normal;
-	letter-spacing: 1.8;
+	letter-spacing: 1.5px;
 	padding: 12px;
 	border-radius: 22.5px;
-	margin-top: 24px;
+	margin-top: 15px;
 	width: 279px;
 	height: 45px;
 	font-size: 14px;
 	border: none;
-
 }
 
 .ratings-wrapper {
@@ -112,40 +103,62 @@ label {
 	height: 42px;
 	border-radius: 50%;
 	letter-spacing: 1.8;
-	
 }
 
-h1 img {
-	background: hsl(213, 19%, 18%);
-	padding: 13px;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
+/**************************/
+/* THANK YOU */
+/**************************/
+.thank-you {
+	background: radial-gradient(at top,
+	hsl(215, 20%, 17%), 
+	hsl(215, 24%, 12%)); 
+	border-radius: 5%;
+	padding: 15px;
+	/* padding: 24px 0 0 24px; */
+	width: 327px;
+	height: 360px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}	
+
+.thank-you img {
+	width: 144px;
+	height: 96px;
+	margin-top: 34px;
 }
 
 .message {
-	/* display: flex; */
-	justify-content: center;
-	align-items: center;
-	
-	margin: 24px 0;
+	margin: 24px;
 	border-radius: 15px;
 	background: hsl(213, 19%, 18%);
 	width: 168px;
 	height: 32px;
 }
 
-.text {
-	flex-shrink: ;
-	/* margin-bottom: 37px; */
+.text {	
 	color:  hsl(25, 97%, 53%);
+	padding: 5px 0;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.8;
 }
 
-.thank-you img {
-	width: 144px;
-	height: 96px;
-	margin-top: 34px;
+.heading-secondary {
+	font-size: 24px;
+	font-style: normal;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.8;	
+}
+
+.secondary-text {
+	margin: 10px 0 32px 0;
+	color: hsl(217, 12%, 63%);
+	font-weight: 400;
+	line-height: 1.7;
+	font-size: 14px;
+	text-align: center;
 }

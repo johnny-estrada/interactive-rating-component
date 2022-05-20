@@ -10,7 +10,9 @@ body {
 }
 
 h2 {
+	/* margin-top: 10px; */
 	font-size: 24px;
+	font-style: normal;
 	color: #fff;
 	font-weight: 700;
 	line-height: 1.8;
@@ -19,10 +21,12 @@ h2 {
 }
 
 p {
+	margin-top: 10px;
 	color: hsl(217, 12%, 63%);
 	font-weight: 500;
-	line-height: 1.8;
-	font-size: 15px;
+	line-height: 1.7;
+	font-size: 14px;
+	margin-bottom: 24px;
 }
 
 form {
@@ -48,7 +52,6 @@ label {
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
 	border-radius: 5%;
-	/* margin: 0 20px; */
 	/* padding: 24px 0 0 24px; */
 	width: 327px;
 	height: 360px;
@@ -57,20 +60,46 @@ label {
 .btn-primary {
 	background: hsl(25, 97%, 53%);
 	color: #fff;
-	font-weight: 500;
-	padding: 15px;
-	border-radius: 25px;
-	margin: 20px;
-	width: 90%;
-	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.8;
+	font-style: normal;
+	letter-spacing: 1.8;
+	padding: 12px;
+	border-radius: 22.5px;
+	margin-top: 24px;
+	width: 279px;
+	/* height: 45px; */
+	font-size: 14px;
 	border: none;
-	letter-spacing: 1.87px;
 
+}
+
+.ratings-wrapper {
+	display: flex;
+	padding: 5px;
+	/* justify-content: center; */
+	/* align-items: center; */
+	
+	gap: 17px;
+}
+
+.ratings {
+	background: hsl(213, 19%, 18%);
+	color: hsl(216, 12%, 54%);
+	font-weight: 700;
+	font-size: 14px;
+	font-style: normal;
+	padding: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	letter-spacing: 1.8;
+	
 }
 
 img {
 	background: hsl(213, 19%, 18%);
-	padding: 14px;
+	padding: 13px;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;

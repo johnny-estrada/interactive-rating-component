@@ -48,6 +48,7 @@ label {
 }
 
 .rating {
+	display: none;
 	background: radial-gradient(at top,
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
@@ -67,7 +68,7 @@ label {
 	width: 327px;
 	height: 360px;
 
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -120,4 +121,31 @@ h1 img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+}
+
+.message {
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	
+	margin: 24px 0;
+	border-radius: 15px;
+	background: hsl(213, 19%, 18%);
+	width: 168px;
+	height: 32px;
+}
+
+.text {
+	flex-shrink: ;
+	/* margin-bottom: 37px; */
+	color:  hsl(25, 97%, 53%);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.thank-you img {
+	width: 144px;
+	height: 96px;
+	margin-top: 34px;
 }

@@ -96,10 +96,16 @@ body {
 	color: #fff;
 }
 
+.ratings:active {
+	background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
 .active {
 	background: hsl(217, 12%, 63%);
 	color: #fff;
 }
+
 
 .btn-primary {
 	background: hsl(25, 97%, 53%);
@@ -121,6 +127,12 @@ body {
 button:hover {
 	background: #fff;
 	color: hsl(25, 97%, 53%);
+
+}
+
+button:active {
+	background: hsl(25, 97%, 53%);
+	color: #fff;
 
 }
 

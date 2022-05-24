@@ -29,13 +29,13 @@ body {
 	justify-content: center;
 }
 
+/**************************/
+/* RATINGS */
+/**************************/
 .rating-content {
 	margin: 24px;
 }
 
-/**************************/
-/* RATINGS */
-/**************************/
 .img {
 	background: hsl(213, 19%, 18%);
 	padding: 13px;
@@ -61,7 +61,7 @@ body {
 }
 
 .rating {
-	display: none;
+	/* display: none; */
 	background: radial-gradient(at top,
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
@@ -69,22 +69,6 @@ body {
 	width: 327px;
 	height: 360px;
 }	
-
-.btn-primary {
-	background: hsl(25, 97%, 53%);
-	color: #fff;
-	font-weight: 700;
-	line-height: 1.8;
-	font-style: normal;
-	letter-spacing: 1.5px;
-	padding: 12px;
-	border-radius: 22.5px;
-	margin-top: 15px;
-	width: 279px;
-	height: 45px;
-	font-size: 14px;
-	border: none;
-}
 
 .ratings-wrapper {
 	display: flex;
@@ -103,6 +87,41 @@ body {
 	height: 42px;
 	border-radius: 50%;
 	letter-spacing: 1.8;
+	cursor: pointer;
+	
+}
+
+.ratings:hover {
+	background: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+.active {
+	background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+.btn-primary {
+	background: hsl(25, 97%, 53%);
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.8;
+	font-style: normal;
+	letter-spacing: 1.5px;
+	padding: 12px;
+	border-radius: 22.5px;
+	margin-top: 15px;
+	width: 279px;
+	height: 45px;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #fff;
+	color: hsl(25, 97%, 53%);
+
 }
 
 /**************************/
@@ -118,7 +137,7 @@ body {
 	width: 327px;
 	height: 360px;
 
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

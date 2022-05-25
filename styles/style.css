@@ -32,7 +32,7 @@ body {
 /**************************/
 /* RATINGS */
 /**************************/
-.rating-content {
+.ratings-form {
 	margin: 24px;
 }
 
@@ -60,7 +60,7 @@ body {
 	font-size: 14px;
 }
 
-.rating {
+.ratings-container {
 	/* display: none; */
 	background: radial-gradient(at top,
 	hsl(215, 20%, 17%), 
@@ -75,6 +75,40 @@ body {
 	justify-content: end;
 	padding: 5px;
 	gap: 10px;
+}
+
+input[type="radio"] {
+	appearance: none;
+    
+}
+
+label {
+	background: hsl(213, 19%, 18%);
+	color: hsl(216, 12%, 54%);
+	font-weight: 700;
+	font-size: 14px;
+	font-style: normal;
+	padding: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	letter-spacing: 1.8;
+	cursor: pointer;   
+}
+
+.active {
+	background: hsl(216, 12%, 54%);
+	color: #fff;
+}
+
+input[type="radio"] + label:hover {
+    background: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+input[type="radio"] + label:active {
+    background: hsl(217, 12%, 63%);
+	color: #fff;
 }
 
 .btn-primary {
@@ -115,11 +149,10 @@ body {
 	hsl(215, 24%, 12%)); 
 	border-radius: 5%;
 	padding: 15px;
-	/* padding: 24px 0 0 24px; */
 	width: 327px;
 	height: 360px;
 
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -164,42 +197,3 @@ body {
 	font-size: 14px;
 	text-align: center;
 }
-
-/* ********************************** */
-input[type="radio"] {
-	appearance: none;
-    
-}
-
-label {
-	background: hsl(213, 19%, 18%);
-	color: hsl(216, 12%, 54%);
-	font-weight: 700;
-	font-size: 14px;
-	font-style: normal;
-	padding: 15px;
-	width: 42px;
-	height: 42px;
-	border-radius: 50%;
-	letter-spacing: 1.8;
-	cursor: pointer;
-    
-}
-
-.active {
-	background: hsl(216, 12%, 54%);
-	color: #fff;
-	cursor:not-allowed;
-}
-
-input[type="radio"] + label:hover {
-    background: hsl(25, 97%, 53%);
-	color: #fff;
-}
-
-input[type="radio"] + label:active {
-    background: hsl(217, 12%, 63%);
-	color: #fff;
-}
-
-

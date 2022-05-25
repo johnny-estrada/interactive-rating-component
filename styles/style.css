@@ -76,7 +76,7 @@ body {
 	gap: 17px;
 }
 
-.ratings {
+/* .ratings {
 	background: hsl(213, 19%, 18%);
 	color: hsl(216, 12%, 54%);
 	font-weight: 700;
@@ -89,17 +89,7 @@ body {
 	letter-spacing: 1.8;
 	cursor: pointer;
 	
-}
-
-.ratings:hover {
-	background: hsl(25, 97%, 53%);
-	color: #fff;
-}
-
-.ratings:active {
-	background: hsl(217, 12%, 63%);
-	color: #fff;
-}
+} */
 
 .active {
 	background: hsl(217, 12%, 63%);
@@ -124,14 +114,14 @@ body {
 	cursor: pointer;
 }
 
-button:hover {
+.btn-primary:hover {
 	background: #fff;
 	color: hsl(25, 97%, 53%);
 
 }
 
-button:active {
-	background: hsl(25, 97%, 53%);
+.btn-primary:active {
+	background: grey;
 	color: #fff;
 
 }
@@ -194,3 +184,44 @@ button:active {
 	font-size: 14px;
 	text-align: center;
 }
+
+/* ********************************** */
+input[type="radio"] {
+    display: contents;
+}
+
+input[type="radio"] + label {
+    background: hsl(213, 19%, 18%);
+	color: hsl(216, 12%, 54%);
+	font-weight: 700;
+	font-size: 14px;
+	font-style: normal;
+	padding: 15px;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	letter-spacing: 1.8;
+	cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+    background: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+input[type="radio"] + label:active {
+    background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+input[type="radio"] + label::before{
+    background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+input[type="radio"] + label::after{
+    background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+

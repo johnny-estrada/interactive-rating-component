@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <section class="rating">
-      <form class="rating-content" action="submit" name="rating">
+      <form class="rating-content">
         <h1 class="icon">
           <img class="img" src="./images/icon-star.svg" alt="icon">
         </h1>
@@ -25,11 +25,17 @@
           to help us improve our offering!</p>
 
         <div class="ratings-wrapper">
-          <div class="ratings active">1</div>
-          <div class="ratings">2</div>
-          <div class="ratings">3</div>
-          <div class="ratings">4</div>
-          <div class="ratings">5</div>
+          <input class="active" type="radio" name="rating" value="1">
+          <label class="active" for="rating">1</label>
+
+          <input type="radio" name="rating" value="2">
+          <label for="rating">2</label>
+          <input type="radio" name="rating" value="3">
+          <label for="rating">3</label>
+          <input type="radio" name="rating" value="4">
+          <label for="rating">4</label>
+          <input type="radio" name="rating" value="5">
+          <label for="rating">5</label>
         </div>    
 
         <button class="btn-primary">SUBMIT</button>  
@@ -48,5 +54,6 @@
       <p class="secondary-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </section>
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>

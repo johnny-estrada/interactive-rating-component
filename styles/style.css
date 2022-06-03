@@ -164,7 +164,7 @@ input[type="radio"] + label:active {
 	margin-top: 34px;
 }
 
-.message {
+.output {
 	margin: 24px;
 	border-radius: 15px;
 	background: hsl(213, 19%, 18%);

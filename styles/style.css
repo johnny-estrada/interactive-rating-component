@@ -60,7 +60,7 @@ body {
 	font-size: 14px;
 }
 
-.ratings-container {
+.ratings {
 	/* display: none; */
 	background: radial-gradient(at top,
 	hsl(215, 20%, 17%), 
@@ -102,12 +102,12 @@ label {
 }
 
 input[type="radio"] + label:hover {
-    background: hsl(25, 97%, 53%);
+  background: hsl(25, 97%, 53%);
 	color: #fff;
 }
 
 input[type="radio"] + label:active {
-    background: hsl(217, 12%, 63%);
+  background: hsl(217, 12%, 63%);
 	color: #fff;
 }
 
@@ -131,13 +131,11 @@ input[type="radio"] + label:active {
 .btn-primary:hover {
 	background: #fff;
 	color: hsl(25, 97%, 53%);
-
 }
 
 .btn-primary:active {
 	background: hsl(25, 97%, 53%);
 	color: #fff;
-
 }
 
 /**************************/

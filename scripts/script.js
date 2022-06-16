@@ -1,22 +1,22 @@
 'use strict';
 
-const form = document.querySelector('#ratings-form');
+const form = document.querySelector('.ratings-form');
+const ratingsCard = document.querySelector('.ratings');
+const button = document.querySelector('.btn-primary');
 
-const input = document.querySelector('#five');
+const thankYouCard = document.querySelector('.thank-you');
+const message = document.querySelector('#msg');
 
-const output = document.querySelector('#msg');
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
 
-// Button functionality
-form.addEventListener('submit', (f) => {
-	f.preventDefault();
-
-	const rating = input.value; // 1
+	const ratingValue = document.querySelector('input[name="rating"]:checked').value;
 	const paragraph = document.createElement('p'); // <p></p>
-	const toggle = document.querySelector('.ratings');
 
-	toggle.style.display = 'none';
+	ratingsCard.style.display = 'none';
+	thankYouCard.style.display = 'flex';
 
 	paragraph.classList.add('text');
-	paragraph.textContent = `You selected ${rating} out of 5`;
-	output.appendChild(paragraph);
+	paragraph.textContent = `You selected ${ratingValue} ouf of 5`;
+	message.appendChild(paragraph);
 });

@@ -61,7 +61,6 @@ body {
 }
 
 .ratings {
-	/* display: none; */
 	background: radial-gradient(at top,
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
@@ -138,6 +137,11 @@ input[type="radio"] + label:active {
 	color: #fff;
 }
 
+input[type=radio]:checked + label {
+    color: #fff;
+	background-color: hsl(217, 12%, 63%);
+}
+
 /**************************/
 /* THANK YOU */
 /**************************/
@@ -150,7 +154,7 @@ input[type="radio"] + label:active {
 	width: 327px;
 	height: 360px;
 
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

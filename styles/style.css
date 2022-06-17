@@ -13,11 +13,15 @@ FONT SIZE SYSTEM (px)
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	
+}
+
+html {
+font-size: 62.5%;
 }
 
 body {
-	font-family: 'Overpass', sans-serif;
-	font-size: 16px;	
+	font-family: 'Overpass', sans-serif;	
 }
 
 .container {
@@ -37,49 +41,50 @@ body {
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
 	border-radius: 5%;
-	width: 327px;
-	height: 360px;
+	width: 32.7rem;
+	height: 36rem;
 }	
 
 @media (min-width: 500px) {
 	.ratings {
-		width: 412px;
-		height: 416px;
+		border-radius: 8%;
+		width: 41.2rem;
+		height: 41.6rem;
 	}
 	
 }
 
 .ratings-form {
-	margin: 24px;
+	margin: 2.4rem;
 }
 
 @media (min-width: 500px) {
 	.ratings-form {
-		margin-bottom: 36px;
+		margin-bottom: 3.6rem;
 	}
 	
 }
 
 .img {
 	background: hsl(213, 19%, 18%);
-	padding: 13px;
-	width: 40px;
-	height: 40px;
+	padding: 1.3rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 50%;
 }
 
 @media (min-width: 500px) {
 	.img {
-		padding: 16px;
-		width: 48px;
-		height: 48px;
-		margin: 10px;
+		padding: 1.6rem;
+		width: 4.8rem;
+		height: 4.8rem;
+		margin: 1rem;
 	}
 	
 }
 
 .rating-secondary {
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-style: normal;
 	color: #fff;
 	font-weight: 700;
@@ -88,24 +93,24 @@ body {
 
 @media (min-width: 500px) {
 	.rating-secondary {
-		font-size: 28px;
-		margin: 10px;	
+		font-size: 2.8rem;
+		margin: 1rem;	
 	}
 	
 }
 
 .main-text {
-	margin: 10px 0 20px 0;
+	margin: 1rem 0 2rem 0;
 	color: hsl(217, 12%, 63%);
 	font-weight: 400;
 	line-height: 1.7;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 @media (min-width: 500px) {
 	.main-text {
-		margin: 10px 0 20px 10px;
-		font-size: 14px;
+		margin: 1rem 0 2rem 1rem;
+		font-size: 1.4rem;
 	}
 	
 }
@@ -113,8 +118,9 @@ body {
 .ratings-wrapper {
 	display: flex;
 	justify-content: end;
-	padding: 5px;
-	gap: 10px;
+	padding: .5rem;
+	margin-bottom: 10px;
+	gap: 1rem;
 }
 
 @media (min-width: 500px) {
@@ -127,7 +133,7 @@ body {
 
 input[type="radio"] {
 	appearance: none;
-    
+	
 }
 
 input[type="radio"] + label:hover {
@@ -149,22 +155,22 @@ label {
 	background: hsl(213, 19%, 18%);
 	color: hsl(216, 12%, 54%);
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-style: normal;
-	padding: 15px;
-	width: 42px;
-	height: 42px;
+	padding: 1.5rem;
+	width: 4.2rem;
+	height: 4.2rem;
 	border-radius: 50%;
-	letter-spacing: 1.8;
+	letter-spacing: 1.8rem;
 	cursor: pointer;   
 }
 
 @media (min-width: 500px) {
 	label {
-		font-size: 16px;
-		padding: 17px;
-		width: 51px;
-		height: 51px;  
+		font-size: 1.6rem;
+		padding: 1.9rem;
+		width: 5.1rem;
+		height: 5.1rem;  
 	}
 	
 }
@@ -175,25 +181,25 @@ label {
 	font-weight: 700;
 	line-height: 1.8;
 	font-style: normal;
-	letter-spacing: 1.5px;
-	padding: 12px;
+	letter-spacing: .2rem;
 	border-radius: 22.5px;
-	margin-top: 15px;
-	width: 279px;
-	height: 45px;
-	font-size: 14px;
+	margin-top: 1.5rem;
+	width: 27.9rem;
+	height: 4.5rem;
+	font-size: 1.4rem;
 	border: none;
 	cursor: pointer;
 }
 
 @media (min-width: 500px) {
 	.btn-primary {
-		padding: 12px;
-		margin: 15px 0 36px 10px;
-		width: 341px;
-		font-size: 14px;
+		letter-spacing: .2rem;
+		line-height: 1.9;
+		padding: 1.2rem;
+		margin: 1.5rem 0 3.6rem 1rem;
+		width: 34.1rem;
+		font-size: 1.5rem;
 	}
-	
 }
 
 .btn-primary:hover {
@@ -214,9 +220,9 @@ label {
 	hsl(215, 20%, 17%), 
 	hsl(215, 24%, 12%)); 
 	border-radius: 5%;
-	padding: 15px;
-	width: 327px;
-	height: 360px;
+	padding: 1.5rem;
+	width: 32.7rem;
+	height: 36rem;
 
 	display: none;
 	flex-direction: column;
@@ -225,30 +231,30 @@ label {
 }	
 
 .thank-you img {
-	width: 144px;
-	height: 96px;
-	margin-top: 34px;
+	width: 14.4rem;
+	height: 9.6rem;
+	margin-top: 3.4rem;
 }
 
 .message {
-	margin: 24px;
-	border-radius: 15px;
+	margin: 2.4rem;
+	border-radius: 1.5rem;
 	background: hsl(213, 19%, 18%);
-	width: 168px;
-	height: 32px;
+	width: 16.8rem;
+	height: 3.2rem;
 }
 
 .text {	
 	color:  hsl(25, 97%, 53%);
-	padding: 5px 0;
+	padding: .5rem 0;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 1.4rem;
 	line-height: 1.8;
 	text-align: center;
 }
 
 .heading-secondary {
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-style: normal;
 	color: #fff;
 	font-weight: 700;
@@ -256,10 +262,10 @@ label {
 }
 
 .secondary-text {
-	margin: 10px 0 32px 0;
+	margin: 1rem 0 3.2rem 0;
 	color: hsl(217, 12%, 63%);
 	font-weight: 400;
 	line-height: 1.7;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-align: center;
 }

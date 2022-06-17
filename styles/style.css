@@ -30,10 +30,34 @@ body {
 }
 
 /**************************/
-/* RATINGS */
+/* RATINGS CARD */
 /**************************/
+.ratings {
+	background: radial-gradient(at top,
+	hsl(215, 20%, 17%), 
+	hsl(215, 24%, 12%)); 
+	border-radius: 5%;
+	width: 327px;
+	height: 360px;
+}	
+
+@media (min-width: 500px) {
+	.ratings {
+		width: 412px;
+		height: 416px;
+	}
+	
+}
+
 .ratings-form {
 	margin: 24px;
+}
+
+@media (min-width: 500px) {
+	.ratings-form {
+		margin-bottom: 36px;
+	}
+	
 }
 
 .img {
@@ -44,12 +68,30 @@ body {
 	border-radius: 50%;
 }
 
+@media (min-width: 500px) {
+	.img {
+		padding: 16px;
+		width: 48px;
+		height: 48px;
+		margin: 10px;
+	}
+	
+}
+
 .rating-secondary {
 	font-size: 24px;
 	font-style: normal;
 	color: #fff;
 	font-weight: 700;
 	line-height: 1.8;	
+}
+
+@media (min-width: 500px) {
+	.rating-secondary {
+		font-size: 28px;
+		margin: 10px;	
+	}
+	
 }
 
 .main-text {
@@ -60,14 +102,13 @@ body {
 	font-size: 14px;
 }
 
-.ratings {
-	background: radial-gradient(at top,
-	hsl(215, 20%, 17%), 
-	hsl(215, 24%, 12%)); 
-	border-radius: 5%;
-	width: 327px;
-	height: 360px;
-}	
+@media (min-width: 500px) {
+	.main-text {
+		margin: 10px 0 20px 10px;
+		font-size: 14px;
+	}
+	
+}
 
 .ratings-wrapper {
 	display: flex;
@@ -76,9 +117,32 @@ body {
 	gap: 10px;
 }
 
+@media (min-width: 500px) {
+	.ratings-wrapper {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+}
+
 input[type="radio"] {
 	appearance: none;
     
+}
+
+input[type="radio"] + label:hover {
+  background: hsl(25, 97%, 53%);
+	color: #fff;
+}
+
+input[type="radio"] + label:active {
+  background: hsl(217, 12%, 63%);
+	color: #fff;
+}
+
+input[type=radio]:checked + label {
+    color: #fff;
+	background-color: hsl(217, 12%, 63%);
 }
 
 label {
@@ -95,19 +159,14 @@ label {
 	cursor: pointer;   
 }
 
-.active {
-	background: hsl(216, 12%, 54%);
-	color: #fff;
-}
-
-input[type="radio"] + label:hover {
-  background: hsl(25, 97%, 53%);
-	color: #fff;
-}
-
-input[type="radio"] + label:active {
-  background: hsl(217, 12%, 63%);
-	color: #fff;
+@media (min-width: 500px) {
+	label {
+		font-size: 16px;
+		padding: 17px;
+		width: 51px;
+		height: 51px;  
+	}
+	
 }
 
 .btn-primary {
@@ -127,6 +186,16 @@ input[type="radio"] + label:active {
 	cursor: pointer;
 }
 
+@media (min-width: 500px) {
+	.btn-primary {
+		padding: 12px;
+		margin: 15px 0 36px 10px;
+		width: 341px;
+		font-size: 14px;
+	}
+	
+}
+
 .btn-primary:hover {
 	background: #fff;
 	color: hsl(25, 97%, 53%);
@@ -137,13 +206,8 @@ input[type="radio"] + label:active {
 	color: #fff;
 }
 
-input[type=radio]:checked + label {
-    color: #fff;
-	background-color: hsl(217, 12%, 63%);
-}
-
 /**************************/
-/* THANK YOU */
+/* THANK YOU  CARD*/
 /**************************/
 .thank-you {
 	background: radial-gradient(at top,
@@ -166,7 +230,7 @@ input[type=radio]:checked + label {
 	margin-top: 34px;
 }
 
-.output {
+.message {
 	margin: 24px;
 	border-radius: 15px;
 	background: hsl(213, 19%, 18%);
